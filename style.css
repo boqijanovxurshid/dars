@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+.second_font{
+    font-family: 'Nunito', sans-serif !important;
+}
+.header{
+  background: url(img/h1_hero1.png.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.button{
+    background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%, #7db9e8 100%);   
+    border: none;
+    padding: 13px 36px ;
+    text-transform: capitalize ;
+    color: #fff ;
+    font-size: 18px ;
+    font-weight: 500 ;
+    display: inline-block ;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    transition: all .5s ease-out 0s;
+}
+.button:hover{
+  background: linear-gradient(to bottom,#7db9e8 0%,#ff6d6d,#ff4495 100%);
+}
+.menu a{
+    font-size: 18px
+}
+.color{
+    color: #ff4495 !important;
+}
+.header_content_p{
+    border-radius: 50px;
+    border: 1px solid rgba(255,68,149,0.2);
+    background: #fff;
+    width: fit-content;
+    font-size: 14px;
+    padding: 3px 20px;
+}
+.play{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play div{
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff4495;
+    transition: all .3s linear;
+    border: 1px solid rgba(0,0,0,0.1 );
+}   
+.play:hover >div{
+    background: #ff4495;
+    color: #fff;
+}
+.service {
+    background: #FEF8FA;
+}
+
+.service .card {
+    box-shadow: 0 25px 35px rgb(68, 162, 255, 0.1);
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease-out;
+}
+
+.service .card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #192839;
+    z-index: -1;
+    transition: all 0.4s ease-out;
+    border-radius: 5px;
+}
+
+.service .card:hover:before {
+    height: 100%;
+}
+
+.service .card:hover {
+    color: #fff;
+}
+
+.service .card_img {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFE1EE;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+
+.more {
+    background: none;
+    border-bottom: 5px;
+}
+
+.color {
+    color: #ff4495;
+}
